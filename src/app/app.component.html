@@ -1,0 +1,14 @@
+<!-- Header  -->
+<app-header (toggle)="sidebarToggle()"></app-header>
+
+<!-- Main Content  -->
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" [opened]="sidebar" opened><app-sidebar></app-sidebar></mat-drawer>
+  <mat-drawer-content><app-main-content></app-main-content>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<mat-divider></mat-divider> 
+
+<!-- Footer  -->
+<app-footer></app-footer>
